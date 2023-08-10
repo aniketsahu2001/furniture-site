@@ -1,0 +1,38 @@
+<div class="header">
+    <nav>
+      <input type="checkbox" id="show-search" />
+      <input type="checkbox" id="show-menu" />
+      <label for="show-menu" class="menu-icon"
+        ><i class="fas fa-bars"></i
+      ></label>
+      <div class="content">
+        <div class="logo">
+          <a href="./app.component.html"
+            ><img src="../assets/images/logo.png" alt=""
+          /></a>
+        </div>
+
+        <ul class="links">
+          <li><a href="#" id="first">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a routerLink="/products">Products</a></li>
+          <li><a href="#contact">Rent Out</a></li>
+          <li><a href="#review">Reviews</a></li>
+          <li><a href="#cart" routerLink="/cart-page">Cart</a></li>
+          
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"
+        ><i class="fas fa-search"></i
+      ></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Search" required />
+        <button type="submit" class="go-icon">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </button>
+        
+      </form>
+    </nav>
+  </div>
+  <!-- Header End -->
+

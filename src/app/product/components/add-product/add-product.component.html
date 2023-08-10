@@ -1,0 +1,43 @@
+<!-- Contact Section Start -->
+<section class="contact" id="contact">
+  <div class="content-text">
+    <h2>Get In <span>Touch</span></h2>
+    <p>Furniture corporate Address</p>
+    <p>
+      SOBHA Highrise Ventures Private Limited SOBHA, Sarjapur-Marthahalli Outer
+      Ring Road Bellandur Post Bangalore 560103
+    </p>
+    <div class="list">
+      <li><a href="#">080-46464545</a></li>
+      <li><a href="#">helpdesk@metercube.com</a></li>
+      <li>
+        <a href="#">Please email us for all trade and corporate enquiries</a>
+      </li>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <form [formGroup]="addForm" (ngSubmit)="addProduct()">
+      <input type="text" placeholder="Id" formControlName="seater" />
+      <input type="text" placeholder="Name" formControlName="name" />
+      <input
+        type="number"
+        placeholder="Cost"
+        formControlName="price"
+        min="1"
+        step="1"
+      />
+      <input
+        type="text"
+        placeholder="Upholstery"
+        formControlName="upholstery"
+      />
+      <input type="text" placeholder="Colour" formControlName="colour" />
+      <button type="submit" class="submit">Add product</button>
+    </form>
+
+    <!-- <input type="text" id="text"/>
+    <button (click)="addProduct()">Submit</button> -->
+  </div>
+</section>
+<!-- Contact Section End -->

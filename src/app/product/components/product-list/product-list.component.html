@@ -1,0 +1,19 @@
+<!-- Product Section Start -->
+
+<section class="product" id="product">
+  <div class="main-txt">
+    <h3>Products</h3>
+  </div>
+  <div class="card-content">
+    <div class="row" *ngFor="let product of products">
+      <img [src]="product.imageSrc" alt="{{product.name}}" />
+      <div class="card-body">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.upholstery }}</p>
+        <h5>Price {{ product.price| currency }}</h5>
+        <button>Order Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Product Section End -->
